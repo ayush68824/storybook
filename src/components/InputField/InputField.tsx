@@ -47,7 +47,8 @@ const InputField = forwardRef<HTMLInputElement, InputFieldProps>(
     ref
   ) => {
     const [showPassword, setShowPassword] = useState(false);
-    const [isFocused, setIsFocused] = useState(false);
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [isFocused, setIsFocused] = useState(false);
 
     const inputType = type === 'password' && showPasswordToggle 
       ? (showPassword ? 'text' : 'password') 
